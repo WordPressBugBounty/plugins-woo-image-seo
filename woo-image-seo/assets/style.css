@@ -24,7 +24,11 @@
 #woo_image_seo p {
     font-size: 15px;
     line-height: 21px;
-    margin: 0 0 14px 0;
+    margin: 0;
+}
+
+#woo_image_seo p + p {
+    margin-top: 14px;
 }
 
 #woo_image_seo .postbox {
@@ -279,19 +283,19 @@ body.no-focus #woo_image_seo_form input[type="checkbox"]:checked:focus ~ .checkm
 /*
 	help triggers
 */
-#woo_image_seo_form .dashicons-editor-help {
+#woo_image_seo .dashicons-editor-help {
     vertical-align: middle;
     cursor: pointer;
-    color: #444;
+    color: inherit;
     transition: transform .3s;
 }
 
-#woo_image_seo_form .dashicons-editor-help:hover,
-#woo_image_seo_form .dashicons-editor-help:focus {
+#woo_image_seo .dashicons-editor-help:hover,
+#woo_image_seo .dashicons-editor-help:focus {
     transform: scale(1.2);
 }
 
-#woo_image_seo_form .dashicons-editor-help:focus {
+#woo_image_seo .dashicons-editor-help:focus {
     box-shadow: none;
     color: #0073aa;
 }
@@ -311,6 +315,7 @@ body.no-focus #woo_image_seo_form input[type="checkbox"]:checked:focus ~ .checkm
     width: 900px;
     max-width: 90vw;
     overflow: auto;
+    color: #3c434a;
 }
 
 #woo_image_seo .postbox--help h2 {
@@ -464,10 +469,15 @@ body.no-focus #woo_image_seo_form input[type="checkbox"]:checked:focus ~ .checkm
 /*
 	Ad box
  */
-.postbox--ad {
-    transition: filter .3s;
+.woo-image-seo-ad {
+    margin-top: 21px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #7f54b2;
+    color: #fff;
 }
 
-.postbox--ad:hover {
-    filter: brightness(1.033);
+.woo-image-seo-ad a {
+    color: #fff;
+    text-decoration: underline;
 }
